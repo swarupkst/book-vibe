@@ -3,6 +3,8 @@ import Book from "../component/book/Book";
 import Mainlayout from "../layout/Mainlayout";
 import Homepage from "../page/homepage/Homepage";
 import ErrorPage from "../component/errorpage/Errorpage";
+import ListedBook from "../component/book/ListedBook";
+import ReadBook from "../component/book/ReadBook";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ export const router = createBrowserRouter([
         path: "/book",
         element: <Book />
       },
+      {
+        path: '/listed-book',
+        element: <ListedBook />
+      },
+      {
+        path: '/read-book',
+        element: <ReadBook />
+      }
       
     ],
 
